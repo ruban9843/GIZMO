@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIZMO GALA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+        
+        .body{
+            font-family: "Merriweather" serif;
+        }
+
+        /* .bg-hexagon {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15L30 0z' fill-opacity='.1' fill='%239C92AC' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            background-size:contain;
+            height: 100%;
+        } */
+
+        .text-gradient {
+            background: linear-gradient(45deg, #00ffff, #00ff00, #ffff00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow 2s ease infinite;
+            background-size: 400% 400%;
+        }
+        .text-gradient1 {
+            background: linear-gradient(45deg, #00ffff, #00ff00, #ffff00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow 2s ease infinite;
+            background-size: 400% 400%;
+        }
+
+        @keyframes rainbow {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .banner {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            transform: skew(-5deg);
+        }
+
+        .banner-text {
+            transform: skew(5deg);
+        }
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Ensure the video stays behind other content */
+            object-fit: cover; /* Ensure the video covers the entire area */
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .tech-titens{
+            height: 200px;
+            width: 100px;
+
+        }
+        .background{
+            background-color: rgb(0 0 0 / .5);
+            color: #fff;
+        }
+
+        /* mobile small */
+        
+        /* mobile large */
+
+        @media (max-width: 767px) {
+            .responsive-img {
+                height: 150px;
+                width: 150px;
+                padding: 20px;
+                margin-top: 200px;
+            }
+        }
+        /* desktop */
+        @media (min-width: 768px) {
+            .responsive-img {
+                width: 25%;
+                height: 25%;
+                height: auto;
+                padding: 60px;
+                margin-top: 150px;
+            }
+        }
+        /* tab */
+        @media (min-width: 600px) and (max-width: 1024px) {
+            .responsive-img {
+                height: 200px;
+                width: 200px;
+                margin-bottom: 70px;
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body class="bg-green-900 text-white font-sans " id="body">
+    <video autoplay muted loop id="background-video">
+        <source src="./src/event/202587-918431513.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- header -->
+    <header class="bg-hexagon min-h-screen flex flex-col">
+        <nav class="flex justify-between items-center p-4">
+            <div class="text-2xl font-bold font-['Orbitron'] ">GIZMO GALA</div>
+            <ul class="flex space-x-4">
+                <!-- <li><a href="#" class="hover:text-purple-300 ">Home</a></li>
+                <li><a href="#" class="hover:text-purple-300">Crew</a></li>
+                <li><a href="#" class="hover:text-purple-300">Contact</a></li> -->
+                <li><a href="https://forms.gle/wKQdqkWiR5ZpbRMt7" class="bg-purple-700   px-2 py-2 rounded hover:bg-purple-600 font-['Orbitron']  register">REGISTER </a></li>
+            </ul>
+        </nav>
+        <main class="flex-grow flex flex-col justify-center items-center text-center p-4 relative">
+            <h2 class="md:text-5xl text-4xl mb-2 uppercase text-gradient1 font-['Orbitron'] font-bold  ">suguna college of engineering</h2>
+            <h3 class="text-2xl mb-4 uppercase background rounded-lg p-2">Department of AI&DS AND CSE and IT</h3>
+            <div class=" bg-blue-900">
+                <div class="flex justify-between items-center">
+                    <img src="./src/event/tech_titans_logo-removebg-preview.png" alt="Left Image" class="absolute left-0 tech-titens  responsive-img  object-cover" >
+                    <img src="./src/event/file.png" alt="Right Image" class="absolute right-0 responsive-img  object-cover">
+                </div>
+             </div>
+            
+            <p class="text-xl mb-14  uppercase font-bold  background px-2  rounded-lg  ">Proudly Presents</p>
+            <h1 class="text-6xl md:text-8xl font-bold mb-4 font-['Orbitron'] text-gradient mt-12 pt-9">GIZMO GALA</h1>
+            <p class="text-2xl mb-2 uppercase  background rounded-lg p-2">Inter college Symposium</p>
+            
+        </main>
+    </header>
+
+    <!-- about gizmo  -->
+    <section>
+        <div class="p-8">
+            <div class="max-w-6xl mx-auto">
+                <!-- About Melinia Section -->
+                <div class="flex flex-col md:flex-row items-center mb-16">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="./src/event/about.jpg" alt="Melinia 2024 Logo" class="rounded-lg w-full h-auto object-contain">
+                    </div>
+                    <div class="md:w-1/2 md:pl-8">
+                        <h2 class="text-6xl font-bold mb-4  text-gradient">ABOUT GIZMO</h2>
+                        <p class="text-lg  background rounded-lg p-2">
+                            The Department of Computing organizes a National level Inter-college technical symposium "GIZMO GALA". It is a
+                            celebration of technology, creativity and innovation, attracting students from around the state. It provides a
+                            national platform for the students to showcase their talents and motivates through workshops conducted by
+                            Industrial experts. It also provides an opportunity for the companies to network and engage with the next
+                            generation of technology leaders.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Diverse Events Section -->
+                <h2 class="text-4xl font-bold mb-8 text-center text-pink-400 ">DIVERSE EVENTS, ENDLESS POSSIBILITIES</h2>
+                <!-- carosel 1 FOR TECHNICAL  -->
+                 <div class="flex items-center justify-center">
+                    <div class="w-full max-w-3xl">
+                        <h1 class="text-2xl md:text-3xl font-bold text-center mb-8  background rounded-lg p-2">TECHNICAL EVENTS</h1>
+                        
+                        <div id="custom-controls-carousel " class="relative" data-carousel="slide">
+                            <!-- Carousel wrapper -->
+                            <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96 ">
+                                 <!-- Item 1 -->
+                                <div class="hidden duration-700 ease-in-out " data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer dark:bg-gray-700 " data-modal-target="card1Modal" data-modal-toggle="card1Modal">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/tech-event/sequence_smash.jpg" alt="Card 1 image" />
+                                            <div class="p-4  ">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 uppercase  text-center dark:text-white font-[Merriweather]">sequence smash</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 dark:text-white text-center">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer  dark:bg-gray-700" data-modal-target="card2Modal" data-modal-toggle="card2Modal">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/tech-event/visionless_variables.jpg" alt="Card 2 image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center uppercase">visionless variables</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 dark:text-white text-center">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer  dark:bg-gray-700" data-modal-target="card3Modal" data-modal-toggle="card3Modal">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/tech-event/mind_meld.jpg" alt="Card 3 image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 uppercase text-center dark:text-white">IDEAMATRIX</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 dark:text-white text-center">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer  dark:bg-gray-700" data-modal-target="card4Modal" data-modal-toggle="card4Modal">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/tech-event/glitch_busters.jpg" alt="Card 4 image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white uppercase">glitch busters</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 text-center dark:text-white uppercase">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 5 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer dark:bg-gray-700" data-modal-target="card5Modal" data-modal-toggle="card5Modal">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/tech-event/hack_quest.jpg" alt="Card 5 image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white uppercase">hack quest</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 text-center dark:text-white uppercase">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 6 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer dark:bg-gray-700" data-modal-target="card6Modal" data-modal-toggle="card6Modal">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/tech-event/frontend_feista.jpg" alt="Card 6 image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white uppercase">frontend_feista</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 text-center dark:text-white uppercase">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slider controls -->
+                            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800 group-hover:bg-white/50 dark:group-hover:bg-orange-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800 group-hover:bg-white/50 dark:group-hover:bg-orange-800 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <!-- Modal components -->
+                    <div id="card1Modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        sequence smash
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card1Modal">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/tech-event/sequence_smash.jpg" alt="sequence_smash image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Join Sequence Smash, the ultimate pattern-breaking coding challenge! Face off in three rounds—Easy, Medium, and Hard—where you'll tackle patterns of increasing complexity. Test your coding skills, plan your strategy, and break the sequences in just 15 minutes per round. Ready to smash the patterns and emerge victorious?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Repeat modal components for cards 2-6 -->
+                    <!-- Card 2 Modal -->
+                    <div id="card2Modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        visionless variables
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card2Modal">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"   clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/tech-event/visionless_variables.jpg" alt="Card 2 image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Join Visionless Variables, an exhilarating blind coding competition that challenges your ability to code without visual aids. Test your precision and speed in Round 1 by typing error-free code without a monitor, and advance to Round 2, where you'll write algorithms based on code analysis. Think you’re up for the challenge?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Card 3 Modal -->
+                    <div id="card3Modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        IDEAMATRIX
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card3Modal">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/tech-event/mind_meld.jpg" alt="mind_meld image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Join IdeaMatrix, an exciting ideathon where creativity meets innovation! You'll receive a surprise theme and have 30 minutes to develop a fresh solution. Present your groundbreaking idea in 5-10 minutes, showcasing originality and impact. Ready to brainstorm, innovate, and impress? Bring your best ideas and join us!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Card 4 Modal -->
+                    <div id="card4Modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        glitch busters
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card4Modal">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/tech-event/glitch_busters.jpg" alt="glitch_busters image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Join Glitch Busters, a thrilling mix of debugging and quizzing! In Round 1, put your skills to the test by identifying and fixing code bugs under pressure. Advance to Round 2 and compete in a high-stakes quiz with a rapid-fire round. Team up, troubleshoot, and triumph—are you ready to bust some glitches?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Card 5 Modal -->
+                    <div id="card5Modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        hack quest
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card5Modal">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/tech-event/hack_quest.jpg" alt="hack_quest image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Join us for Hack Quest, a thrilling coding competition featuring two intense rounds: an MCQ Round with progressively challenging questions, and a Code Crack Round that tests your problem-solving skills on real-world coding challenges. Compete in Python, Java, or C, and prove your coding prowess. Don’t miss out!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Card 6 Modal -->
+                    <div id="card6Modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        frontend feista
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card6Modal">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/tech-event/frontend_feista.jpg" alt="frontend_feista image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Join Frontend Fiesta, an exciting web development challenge where teams of 3-4 members will race against the clock to fix a disorganized web layout! Rearrange HTML, adjust CSS, and bring the webpage to life in just 60 minutes. Show off your frontend skills and create the perfect design—are you up for the challenge?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- CAROSEL 2 non technical  -->
+                <div class="flex items-center justify-center">
+                    <div class="w-full max-w-3xl">
+                        <h1 class="text-2xl md:text-3xl font-bold text-center mb-8 mt-8  background rounded-lg p-2">NON TECHNICAL EVENTS</h1>
+                        
+                        <div id="custom-controls-carousel " class="relative" data-carousel="slide">
+                            <!-- Carousel wrapper -->
+                            <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96 ">
+                                 <!-- Item 1 -->
+                                <div class="hidden duration-700 ease-in-out " data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer dark:bg-gray-700 " data-modal-target="card1Modal2" data-modal-toggle="card1Modal2">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/non-tech/microcine_mania.jpg" alt="microcine_mania image" />
+                                            <div class="p-4  ">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 uppercase  text-center dark:text-white font-[Merriweather]">micro cine mania</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 dark:text-white text-center">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer  dark:bg-gray-700" data-modal-target="card2Modal2" data-modal-toggle="card2Modal2">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/non-tech/lenz_legends.jpg" alt="lenz_legends image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center uppercase">lenz legends</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 dark:text-white text-center">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer  dark:bg-gray-700" data-modal-target="card3Modal2" data-modal-toggle="card3Modal2">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/non-tech/virtual_vendetta.jpg" alt="virtual vendetta image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 uppercase text-center dark:text-white">virtual_vendetta</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 dark:text-white text-center">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer  dark:bg-gray-700" data-modal-target="card4Modal2" data-modal-toggle="card4Modal2">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/non-tech/rapid_rhetoric.jpg" alt="rapid_rhetoricimage" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white uppercase">rapid rhetoric</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 text-center dark:text-white uppercase">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 5 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer dark:bg-gray-700" data-modal-target="card5Modal2" data-modal-toggle="card5Modal2">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/non-tech/showcase_sonic.jpg" alt="showcase_sonic image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white uppercase"> sonic showcase</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 text-center dark:text-white uppercase">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 6 -->
+                                <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <div class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                        <div class="w-full md:-mt-10 bg-white border border-gray-200 rounded-lg shadow cursor-pointer dark:bg-gray-700" data-modal-target="card6Modal2" data-modal-toggle="card6Modal2">
+                                            <img class="rounded-t-lg w-full h-32 sm:h-40 md:h-48 object-cover" src="./src/tech-event/frontend_feista.jpg" alt="Card 6 image" />
+                                            <div class="p-4">
+                                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 text-center dark:text-white uppercase">frontend_feista</h5>
+                                                <p class="mb-3 text-sm font-normal text-gray-700 line-clamp-2 text-center dark:text-white uppercase">CLICK FOR MORE DETAILS 👇</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- Slider controls -->
+                            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800 group-hover:bg-white/50 dark:group-hover:bg-orange-800 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800 group-hover:bg-white/50 dark:group-hover:bg-orange-800 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <!-- Modal components -->
+                    <div id="card1Modal2" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        micro cine mania
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card1Modal2">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/non-tech/microcine_mania.jpg" alt="microcine_mania image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Participate in our Short Film Contest where teams of up to 4 members will present films under 10 minutes. Films must adhere to appropriate content guidelines and be submitted via a pen drive. Showcase your creativity and storytelling skills in this exciting challenge!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Repeat modal components for cards 2-6 -->
+                    <!-- Card 2 Modal -->
+                    <div id="card2Modal2" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        lenz legends
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card2Modal2">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"   clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/non-tech/lenz_legends.jpg" alt="lenz_legends image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Step into the world of creative photography with our Photography Challenge! Participants will face two exciting rounds, capturing unique shots based on surprise themes and objects. With just 20 minutes to click the perfect photo, teams will be judged on their creativity, representation, and artistic view. Only the best photographers will advance, showcasing their timeless clicks in a test of both skill and imagination!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Card 3 Modal -->
+                    <div id="card3Modal2" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        virtual vendetta
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card3Modal2">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/non-tech/virtual_vendetta.jpg" alt="virtual vendetta image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Join us for Classic (Free Fire) Match 1! Teams of 4 will compete on a designated game map, earning additional points for each kill. The match will be scored based on total points accumulated by each team. Show your skills and strategize to claim victory in this thrilling battle!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Card 4 Modal -->
+                    <div id="card4Modal2" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                        rapid rhetoric
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card4Modal2">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/non-tech/rapid_rhetoric.jpg" alt=" rapid rhetoric image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Join us for an exciting Impromptu Speech Competition where quick thinking and eloquence are key! Teams will tackle spontaneous topics across three challenging rounds, showcasing their ability to think on their feet. With minimal prep time, each round tests participants' creativity, clarity, and speaking skills. Only the top teams will advance, and the best speakers will be crowned with placement points!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Card 5 Modal -->
+                    <div id="card5Modal2" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white uppercase">
+                                         sonic showcase
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card5Modal2">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/non-tech/showcase_sonic.jpg" alt="showcase_sonic image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                       Join our Singing Competition featuring solo, dual, or group performances. Each participant or team will have 4-5 minutes to perform. Karaoke singers must bring their tracks on a pen drive. The best performances will advance, with two teams selected for the next stage. Let your voice shine!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Card 6 Modal -->
+                    <!-- <div id="card6Modal2" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative w-full max-w-2xl max-h-full">
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                        Card 6
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="card6Modal2">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <img class="w-full h-64 object-cover rounded-lg" src="./src/tech-event/frontend_feista.jpg" alt="frontend_feista image" />
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        Here is some example content for Card 6. You can also use the arrow buttons to navigate manually. You can add more details or content here for the popup view.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                 
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- hacathon -->
+
+
+    <!-- <section>
+        <div class="container mx-auto px-4 py-8">
+            <section class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                <div class="md:w-1/2">
+                    <img src="https://via.placeholder.com/600x400" alt="Hackathon Illustration" class="rounded-lg w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-pink-400 hack" id="hack" >HACKATHON</h2>
+                    <div class="mb-6">
+                        <p class="text-lg  mb-2">Round 1: Feb 1-10 2024</p>
+                        <p class="text-lg mb-2">Round 2: Feb 12-14 2024</p>
+                    </div>
+                    <p class="mb-6">
+                        Embark on a transformative journey at the forefront of innovation with Melinia's Flagship Hackathon! This
+                        dynamic event is your gateway to shaping a brighter future through four compelling themes:
+                    </p>
+                    <ul class="list-disc list-inside mb-6">
+                        <li>Sustainable tech</li>
+                        <li>Mental health tech</li>
+                        <li>Civic Engagement</li>
+                        <li>Financial literacy</li>
+                    </ul>
+                    <p class="mb-6">
+                        Join us in crafting viable and feasible product prototypes that not only enhance the lifestyles of students
+                        and professors but also elevate the working standards of Institutions at large. Let your creativity thrive
+                        and leave a lasting mark on the world! 💡
+                    </p>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+                        REGISTER →
+                    </button>
+                </div>
+            </section>
+        </div>
+    </section> -->
+
+        <!-- hacathon end  -->
+
+
+
+    <!-- time line  -->
+    <section class="mb-20">
+        <h2 class="text-4xl font-bold mb-12 text-center text-white text-pink-400">Event Line-up</h2>
+        <div class="relative">
+            <!-- Vertical line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-white"></div>
+            
+            <!-- Timeline items -->
+            <div class="mb-8  md:-mx-8 w-full flex justify-between items-center  right-timeline me-5">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-pink-400 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white ">🎉</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 items-center text-center">
+                    <h3 class="mb-3 font-bold text-purple-900 text-xl">09.00 am - 09.30 am</h3>
+                    <p class="text-sm leading-snug tracking-wide text-purple-900 text-opacity-100">Inauguration ceremony</p>
+                </div>
+            </div>
+
+            <div class="mb-8 md:mx-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-blue-400 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold text-lg">&lt;/&gt;</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4  text-center">
+                    <h3 class="mb-3 font-bold text-purple-900 text-xl">9.30 am - 11.00 am</h3>
+                    <p class="text-sm font-medium leading-snug tracking-wide text-purple-900 text-opacity-100">Hackquest / Rapid Rhetoric</p>
+                </div>
+            </div>
+            
+            <div class="mb-8 md:-mx-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-orange-400 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white">🍽️</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4  text-center">
+                    <h3 class="mb-3 font-bold text-purple-900 text-xl">11.00 am - 12.00 pm</h3>
+                    <p class="text-sm leading-snug tracking-wide text-purple-900 text-opacity-100">Idea Matrix / Sonic Showcase</p>
+                </div>
+            </div>
+
+            <div class="mb-8 md:mx-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-red-400 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold text-lg">🎭</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4  text-center">
+                    <h3 class="mb-3 font-bold text-purple-900 text-xl">12.00 pm - 01.00 pm</h3>
+                    <p class="text-sm font-medium leading-snug tracking-wide text-purple-900 text-opacity-100"> Lunch break</p>
+                </div>
+            </div>
+
+            <div class="mb-8  md:-mx-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-green-400 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white">🏆</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4  text-center">
+                    <h3 class="mb-3 font-bold text-purple-900 text-xl">01.00 pm - 02.00 pm</h3>
+                    <p class="text-sm leading-snug tracking-wide text-purple-900 text-opacity-100">Visionless Variables / Virtual vendetta</p>
+                </div>
+            </div>
+            <div class="mb-8 md:mx-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-red-400 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold text-lg">🎭</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4  text-center">
+                    <h3 class="mb-3 font-bold text-purple-900 text-xl">02.00 pm - 03.00 pm</h3>
+                    <p class="text-sm font-medium leading-snug tracking-wide text-purple-900 text-opacity-100"> Glitch Busters / Micro Cine Mania</p>
+                </div>
+            </div>
+
+            <div class="mb-8  md:-mx-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-green-400 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white">🏆</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4  text-center">
+                    <h3 class="mb-3 font-bold text-purple-900 text-xl">03.00 pm - 04.00 pm</h3>
+                    <p class="text-sm leading-snug tracking-wide text-purple-900 text-opacity-100">Sequence Smash / Lenz Legends / Frontend Fiesta / Touch & Tint</p>
+                </div>
+            </div>
+            <div class="mb-8 md:mx-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-red-400 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold text-lg">🎭</h1>
+                </div>
+                <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4  text-center">
+                    <h3 class="mb-3 font-bold text-purple-900 text-xl">04.00 pm - 04.30 pm</h3>
+                    <p class="text-sm font-medium leading-snug tracking-wide text-purple-900 text-opacity-100">Validation Ceremony</p>
+                </div>
+            </div>
+           
+        </div>
+        
+            
+        </div>
+    </section>
+
+
+
+    <!-- register button -->
+     <div class="flex justify-center items-center w-full mt-[30px] mb-[80px]">
+        <li><a href="https://forms.gle/wKQdqkWiR5ZpbRMt7" class="bg-purple-600 px-16 py-5 rounded-t-lg hover:bg-red-600 font-[Orbitron] ">REGISTER NOW</a></li>
+     </div>
+
+
+    <!--sponcers  -->
+    <!-- <section class="mb-20">
+        <h2 class="text-3xl font-bold mb-8 text-center text-pink-400">EVENT SPONSORS</h2>
+        <div class="flex justify-center items-center space-x-8">
+            <img src="/placeholder.svg" alt="Sponsor 1" class="w-24 h-12">
+            <img src="/placeholder.svg" alt="Sponsor 2" class="w-24 h-12">
+        </div>
+    </section> -->
+
+
+
+
+    <!-- Chief Guest Section -->
+    <!-- <section class="mb-20 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-pink-400">MEET OUR CHIEF GUEST</h2>
+        <img src="./src/event/about.jpg" alt="Chief Guest" class="mx-auto rounded-full mb-4 w-36 h-36">
+        <h3 class="text-xl font-semibold mb-2">Dr.dheena</h3>
+        <p class="text-gray-300">Professor, XYZ University</p>
+    </section> -->
+
+
+
+
+
+
+
+    <!-- contact -->
+     <div class="">
+        <h1 class="uppercase text-center font-bold text-3xl p-5 ">contact</h1>
+        <form class="max-w-sm  mb-12 mx-auto border border-green-700 p-8  background rounded-lg p-2 " method="post" action="https://formsubmit.co/events@sugunace.com">
+                <div class="">
+                    <label for="email"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+                    <input type="text" required name="name" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="enter your name" required />
+
+                </div>
+                <div class="mb-5">
+                    <label for="email"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                    <input type="email" required id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="enter your email" required />
+                </div>
+                <div class="p-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                    <textarea id="message"  required name="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+                </div>
+            
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+        </form>
+     </div>
+    
+
+
+    <!-- Footer -->
+    <footer class="bg-green-1000 py-8 text-center">
+        <p>&copy; 2024 GIZMO GALA. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        $('#body').show();
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = new Carousel(document.getElementById('custom-controls-carousel'), {
+            interval: 1500,
+            indicators: false,
+            ride: 'carousel'
+        });
+    });
+</script>
+</html>
